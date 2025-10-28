@@ -15,13 +15,8 @@ spec:
       startupProbe:
         httpGet:
           path: ./rajashekar
+          port: 80
         initialDelaySeconds: 10
         periodSeconds: 5
         successThreshold: 1
         failureThreshold: 3
-
-
-
-#      controlplane:~$ kubectl apply -f .
-# The Pod "startup-pod" is invalid: spec.containers[0].startupProbe.httpGet.port: Invalid value: 0:
-#  must be between 1 and 65535, inclusive       
